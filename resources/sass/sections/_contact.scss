@@ -1,0 +1,25 @@
+.contact {
+    .container {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-rows: 1fr;
+        grid-gap: 15px;
+
+        justify-content: center;
+        justify-items: start;
+        align-items: center;
+
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    img {
+        grid-column: 1 / span 1;
+        max-width: 100%;
+    }
+
+    span {
+        grid-column: 2 / span 1;
+    }
+}

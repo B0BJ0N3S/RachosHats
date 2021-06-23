@@ -1,0 +1,46 @@
+// FEATURE
+#feature .container {
+    margin: 20px;
+    @extend %flexCenter;
+    flex-wrap: wrap;
+}
+
+.featureItem {
+    display: inline;
+    position: relative;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+
+    .imagesContainer {
+        display: block;
+        position: relative;
+    }
+
+    .hatImage {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    .hatAnimalImage {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+
+
+// ORDER
+#order p {
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: center;
+    color: gray;
+}

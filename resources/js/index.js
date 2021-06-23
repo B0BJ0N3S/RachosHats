@@ -1,6 +1,4 @@
-const landingText = document.getElementById("landingText");
-
-var txt = "Welcome to Racho's Hats!"; /* The text */
+var landingTexts = document.getElementsByClassName("landingText");
 
 //Writes out the text in the docElement in a typewriter style
 // delay is in ms
@@ -19,4 +17,7 @@ function typeWriter(docElement, txt, delay = 70) {
     }
 }
 
-typeWriter(landingText);
+for (element of landingTexts) {
+    console.log("count");
+};
+
