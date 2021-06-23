@@ -2,7 +2,7 @@ var landingTexts = document.getElementsByClassName("landingText");
 
 //Writes out the text in the docElement in a typewriter style
 // delay is in ms
-function typeWriter(docElement, txt, delay = 70) {
+function typeWriter(docElement, delay = 70) {
     txt = docElement.textContent;
     docElement.textContent = '';
     let i = 0;
@@ -18,6 +18,5 @@ function typeWriter(docElement, txt, delay = 70) {
 }
 
 for (element of landingTexts) {
-    console.log("count");
+    typeWriter(element);
 };
-

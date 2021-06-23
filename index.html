@@ -8,6 +8,7 @@
     <title>Racho's Hats</title>
     <link rel="stylesheet" type="text/css" href="app.css">
     <link rel="icon" href="resources/images/frog.ico" type="image/x-icon">
+    <script src="resources/js/layout.js" async></script>
     <script src="resources/js/index.js" defer></script>
 </head>
 
@@ -18,17 +19,7 @@
         <h1 class="landingText">Welcome to Racho's Hats!</h1>
     </section>
 
-    <header>
-        <nav>
-            <ul>
-                <li class="desktop"><a href="#"><img src="resources/images/001-frog.svg" alt=""></a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#feature">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header-component></header-component>>
 
     <section class="imgBanner">
         <img src="resources/images/michiel-annaert-fAxmgulRG-0-unsplash.jpg">
@@ -112,28 +103,15 @@
     <hr>
 
     <section id="order">
-        <a href="#" class="button"><h2>Place an Order!</h2></a>
+        <a href="html/about.html" class="button"><h2>Place an Order!</h2></a>
         <p>Each hat is custom made, handcrafted, and made to order! Contact me to place an order and recieve a fabulous hat!
     </section>
 
     <hr>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <div class="container">
-            <img src="resources/images/email.png" alt="email icon"><span>businessEmail@gmail.com</span>
-            <img src="resources/images/telephone.png" alt="phone icon"><span>403-123-456</span>
-            <img src="resources/images/facebook.png" alt="facebook logo"><span><a href="fb.com">myFacebookAccount</a></span>
-            <img src="resources/images/instagram.png" alt="instagram logo"><span><a href="instagram.com">myInstagramAccount</a></span>
-            <img src="resources/images/snapchat.png" alt="snapchat logo"><span><a href="snapchat.com">mySnapchat</a></span>
-        </div>
-    </section>
+    <contact-component></contact-component>
 
-    <footer>
-        <span>Copyright © 2021</span>
-        <span>Created By Matthew Wu</span>
-        <span>Icons by Freepik, Smash Icons, Good Ware, Gregor Cresnar, and Pixel Perfect from www.flaticon.com</span>
-    </footer>
+    <footer-component></footer-component>
 </body>
 
 </html>
