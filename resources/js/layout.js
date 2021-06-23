@@ -7,10 +7,10 @@ class Header extends HTMLElement {
         this.innerHTML = `<header>
         <nav>
             <ul>
-                <li class="desktop"><a href="/index.html"><img src="/resources/images/001-frog.svg" alt=""></a></li>
+                <li class="desktop"><a href="/RachosHats/index.html"><img src="/RachosHats/resources/images/001-frog.svg" alt=""></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#feature">Shop</a></li>
-                <li><a href="/html/about.html">About</a></li>
+                <li><a href="/RachosHats/html/about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
