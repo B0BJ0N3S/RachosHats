@@ -9,9 +9,9 @@ class Header extends HTMLElement {
             <ul>
                 <li class="desktop"><a href="./index.html"><img src="./resources/images/001-frog.svg" alt=""></a></li>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href=".">Shop</a></li>
+                <li><a href="./html/shop.html">Shop</a></li>
                 <li><a href="./html/about.html">About</a></li>
-                <li><a href=".">Contact</a></li>
+                <li><a href="./html/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>`;
