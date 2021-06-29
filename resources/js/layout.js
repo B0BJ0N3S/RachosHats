@@ -62,3 +62,10 @@ class Contact extends HTMLElement {
 customElements.define('header-component', Header);
 customElements.define('footer-component', Footer);
 customElements.define('contact-component', Contact);
+
+const all = {
+    Header,
+    Footer,
+    Contact
+}
+export default all;

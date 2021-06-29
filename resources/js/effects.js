@@ -1,9 +1,7 @@
-var landingTexts = document.getElementsByClassName("landingText");
-
 //Writes out the text in the docElement in a typewriter style
 // delay is in ms
 function typeWriter(docElement, delay = 70) {
-    txt = docElement.textContent;
+    const txt = docElement.textContent;
     docElement.textContent = '';
     let i = 0;
     write();
@@ -17,6 +15,7 @@ function typeWriter(docElement, delay = 70) {
     }
 }
 
-for (element of landingTexts) {
-    typeWriter(element);
-};
+const all = {
+    typeWriter
+}
+export default all;
