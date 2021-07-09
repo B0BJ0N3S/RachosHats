@@ -8,22 +8,23 @@ function typeWriter(docElement, delay = 70) {
 
     //writes text
     function write() {
-        //adding in letters and cursor
-        docElement.textContent = docElement.textContent.substring(0, i) + txt.charAt(i) + '|';
+        //adding in letters
+        docElement.textContent = docElement.textContent.substring(0, i) + txt.charAt(i);
         i++;
         //looping
         if (i < txt.length) {
+            docElement.textContent += '|';
             setTimeout(write, delay)
         } else if (i == txt.length) {
             blink();
         }
     }
 
-    //blinks the cursor 'nBlinks" times. Expects cursor is present when function called
+    //blinks the cursor 'nBlinks" times. Expects cursor is not present when function called
     function blink(nBlinks = 3) {
         const blinkDelay = 500;
         let blinkCount = 0;//counts number of blinks
-        removeCursor();
+        addCursor();
 
         function addCursor() {
             docElement.textContent += '|';
