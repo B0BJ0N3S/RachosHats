@@ -1,0 +1,32 @@
+
+.imgBanner {
+    @include gridSplit(2);
+
+    img {
+        grid-column: 1 / span 1;
+        max-width: 100%;
+        max-height: 80vh;
+        object-fit: cover;
+    }
+
+    .bannerText {
+        grid-column: 2 / span 1;
+        display: block;
+        justify-self: start;
+        font-size: 1.5rem;
+        text-align: left;
+        margin-top: 0;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #inspire #quote {
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 1550px) {
+    #inspire #quote {
+        font-size: 5.5rem;
+    }
+}

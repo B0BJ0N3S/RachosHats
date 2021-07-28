@@ -1,0 +1,33 @@
+/* LANDING */
+.landing {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: start;
+    align-content: center;
+    margin: 20px;
+}
+
+.landingImage {
+    max-width: 300px;
+    max-height: 80vh;
+}
+
+.landingText {
+    margin-top: 40px;
+    width: 300px;
+    font-size: 2rem;
+    text-align: left;
+}
+
+@media only screen and (max-width: 550px) {
+    .landingImage {
+        max-width: 150px;
+    }
+
+    .landingText {
+        margin-top: 15px;
+        width: 150px;
+        font-size: 1rem;
+    }
+}

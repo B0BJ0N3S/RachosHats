@@ -1,0 +1,30 @@
+header {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    height: $headerHeight;
+    border: 1px brown solid;
+    border-left: none;
+    border-right: none;
+    background-color: $backgroundColour;
+
+    ul {
+        @extend %flexCenter;
+        margin: 0;
+        padding: 0;
+        height: $headerHeight;
+        justify-content: space-evenly;
+        list-style: none;
+
+        li {
+            display: inline;
+            margin: 5px, 0;
+
+            img {
+                max-height: 50px;
+            }
+        }
+    }
+}
